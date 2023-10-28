@@ -20,5 +20,6 @@ This is going to be my very first project that I'm going to work on. What I have
                - image5.jpeg
                - image6.webp
     
-That's about it for now, I guess. I'll see how far I'll go with this project.
+That's about it for now. I guess we'll see how far I go with this project as I will mostly work on it on the weekend.
+
 -norppa
