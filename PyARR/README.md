@@ -5,7 +5,7 @@ This is going to be my very first project that I'm going to work on. What I have
 # Functionality:
 1. User inputs files of a specific type into the program, for example image files.
 2. User chooses a location for the base directory for their sorted files. For example "C:\Users\usernamehere\Pictures\PyARR_images".
-3. User inputs a name for the directory. PaRR will add an identifier in the end of the sub.dir. name based on the creation year; ("Sorted images - 2022" for example).
+3. User inputs a name for the directory. PyARR will add an identifier in the end of the sub.dir. name based on the creation year; ("Sorted images - 2022" for example).
 4. The newly created and sorted directory could look something like this:
 
        Directory:
