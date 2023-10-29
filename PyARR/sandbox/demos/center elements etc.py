@@ -1,9 +1,10 @@
 import PySimpleGUI as sg
 sg.theme('DarkAmber')  
+
 layout = [ 
         [sg.Text('Enter the value',justification='center',size=(100,1))],
         [sg.Input(justification='center',size=(100,1))],
-        [sg.Button('Enter','center',size=(100,1))]
+        [sg.Button('Enter','center',size=(1000,1))]
      ]
 
 
