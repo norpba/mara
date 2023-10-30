@@ -7,15 +7,19 @@ class WelcomeWindow(Toplevel):
     def __init__(self, root, *args, **kwargs):
         super().__init__(root, *args, **kwargs)
         self.title("Welcome!")
+        self.configure(bg="snow")
         info4 = ttk.Label(self, text="Welcome to Python Arranger!")
+        info4.pack()
         b1 = ttk.Button(self, text="Close", command=self.destroy)
+        b1.pack()
 
         # call the function center_window
         self.center_window()
+        self.resizable(False, False)
 
         # making a function to ensure that the window opens in the middle of the screen
     def center_window(self):
-        w = 100 # width of the welcome window
+        w = 300 # width of the welcome window
         h = 100 # height of the welcome window
 
             # get the screen width and height
@@ -27,7 +31,7 @@ class WelcomeWindow(Toplevel):
         y = (screen_y - h) // 2
 
         self.geometry(f'{w}x{h}+{x}+{y}')
-        self.geometry("100x100")
+        
 
 class MainWindow(Tk):
     ## main window
@@ -41,6 +45,7 @@ class MainWindow(Tk):
         self.title("PyARR v0.1.0")
         self.configure(bg="snow")
         self.center_window()
+        self.resizable(False, False)
 
 
             # create frames
