@@ -1,4 +1,6 @@
 
+# gui for PyARR
+
 from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox
@@ -6,6 +8,7 @@ from tkinter import messagebox
 class WelcomeWindow(Toplevel):
     def __init__(self, root, *args, **kwargs):
         super().__init__(root, *args, **kwargs)
+        self.iconbitmap("C:/Users/norppa/nerdCorner/mara/PyARR/src/gui/titlebar_icon.ico")
         self.title("Welcome!")
         self.configure(bg="snow")
         info4 = ttk.Label(self, text="Welcome to Python Arranger!")
@@ -31,7 +34,6 @@ class WelcomeWindow(Toplevel):
         y = (screen_y - h) // 2
 
         self.geometry(f'{w}x{h}+{x}+{y}')
-        
 
 class MainWindow(Tk):
     ## main window
@@ -39,9 +41,7 @@ class MainWindow(Tk):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
             # load icon from disk
-        self.iconbitmap("C:\\Users\\norppa\\myCode\\mara\\PyARR\\src\\titlebar_icon.ico")
-            # note that it will only change the windows taskbar after
-            # compiling the code and running the program from the executable
+        self.iconbitmap("C:/Users/norppa/nerdCorner/mara/PyARR/src/gui/titlebar_icon.ico")
         self.title("PyARR v0.1.0")
         self.configure(bg="snow")
         self.center_window()
@@ -62,7 +62,7 @@ class MainWindow(Tk):
         info_frame.grid(row=3, column=0, padx=10, pady=0)
 
             # create frames and labels inside the first frames
-
+                                                                        #continue here <--------------
     def center_window(self):
         w = 600 # width of the welcome window
         h = 600 # height of the welcome window
